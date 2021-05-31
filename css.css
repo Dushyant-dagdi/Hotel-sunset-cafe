@@ -1,0 +1,693 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+ }
+ 
+ .maindiv{
+     width: 100%;
+     height:25rem;
+     background-color: rgb(194, 194, 194);
+ }
+
+
+@media screen and (max-width:362px){
+    .maindiv{
+        font-size: 80%;
+    }
+
+    .bar1{
+        font-size: 90%;
+    }
+
+}
+
+@media screen and (max-width:285px){
+    .maindiv{
+        font-size: 76%;
+    }
+
+    .bar1{
+        font-size: 80%;
+    }
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family:"Audiowide", sans-serif ;
+}
+
+
+
+.img{
+    width:  8rem;
+    height: 8rem;
+    border-radius: 50%;
+    transition: transform.10s;
+}
+
+.img:hover{
+     transform:scale(0.888) ;
+}
+
+.intro{
+    color: rgb(98, 98, 98);
+    font-family:"Audiowide", sans-serif ;
+}
+
+.button1{
+    text-decoration:none ;
+    padding: .2rem;
+    padding-right:.4rem;
+    padding-left:.4rem;
+    margin: .5rem;
+    color: white;
+    background-color:rgb(255, 0, 51);
+    border-radius: 3rem;
+    font-family:"Audiowide", sans-serif ;
+    font-size: .8rem;
+    transition-property: all;
+    transition-duration: .10s;
+}
+
+.button1:hover{
+    padding: .4rem;
+    padding-right:.6rem;
+    padding-left:.6rem;
+    margin: .3rem;
+}
+
+.button2{
+    text-decoration:none ;
+    padding: .2rem;
+    padding-right:.4rem;
+    padding-left:.4rem;
+    margin: .5rem;
+    color: white;
+    background-color:darkgoldenrod;
+    border-radius: 3rem;
+    font-family:"Audiowide", sans-serif ;
+    font-size: .8rem;
+    transition-property: all;
+    transition-duration: .10s;
+}
+
+.button2:hover{
+    padding: .4rem;
+    padding-right:.6rem;
+    padding-left:.6rem;
+    margin: .3rem;
+}
+
+.button3{
+    text-decoration:none ;
+    padding: .2rem;
+    padding-right:.4rem;
+    padding-left:.4rem;
+    margin: .5rem;
+    color: white;
+    background-color:rgb(22, 97, 116);
+    border-radius: 3rem;
+    font-family:"Audiowide", sans-serif ;
+    font-size: .8rem;
+    transition-property: all;
+    transition-duration: .10s;
+}
+
+.button3:hover{
+    padding: .4rem;
+    padding-right:.6rem;
+    padding-left:.6rem;
+    margin: .3rem;
+}
+
+.bar1{
+    width: 100%;
+    height: 1.4rem;
+    background-image: linear-gradient(to right,rgb(99, 253, 253) , rgb(15, 15, 119));
+    color: white;
+    font-family:"Audiowide", sans-serif ;
+    padding-top: .1rem;
+    text-shadow: .1rem .1rem .2rem rgb(255, 0, 51);
+}
+
+.rees{
+    animation-name: an;
+    transition: transform .10s;
+}
+
+.rees:hover{
+    transform: rotate(10deg) scale(1.3);
+}
+
+.image{
+    width: 40rem;
+    margin-right: .5rem;
+    max-width:90%;
+    border-radius: 1rem;
+    box-shadow: .6rem .5rem 1rem .3rem rgb(47, 47, 47);
+
+}
+
+.div .lol{
+    margin-left: 1.5rem;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+    font-weight: bolder;
+    
+}
+
+.lol{
+   display: grid;
+   text-align: center;
+   font-size: 30px;
+   letter-spacing: 2.5px;
+}
+
+.lol li{
+    list-style: none;
+    content: '';
+    top: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: t 4s steps(2) infinite; 
+}
+
+@keyframes t {
+    100%{
+        top: -60px;
+    }
+}
+
+
+.lol li span::after{
+    content: '';
+    position:absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-left: .2rem solid rgb(194, 194, 194);
+    background-color: rgb(194, 194, 194);
+    animation: type 2s  infinite;
+} 
+
+@keyframes type {
+    100%{
+        left: 100%;
+        margin: 0 -10px 0 10px;
+    }
+}
+
+.div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy{
+    color: white;
+    text-shadow: none;
+}
+
+svg path{
+    animation: svg 5s linear infinite ;
+}
+
+svg path:nth-child(2){
+    animation-delay: 1s;
+}
+
+svg path:nth-child(3){
+    animation-delay: 3s;
+}
+
+svg path:nth-child(4){
+    animation-play-state: paused;
+}
+
+@keyframes svg {
+
+    0%{
+        d:path("M0,192 C220,100,440,100,660,192 C880,290,1100,290,1320,192 L1320 500 L0  500");
+    }
+
+    25%{
+        d:path("M0,100 C220,100,440,292,660,292 C880,292,1100,100,1320,100 L1320 500 L0  500");
+    }
+
+    50%{
+        d:path("M0,192 C220,290,440,290,660,192 C880,100,1100,192,1320,192 L1320 500 L0  500");
+    }
+
+    75%{
+        d:path("M0,292 C220,292,440,100,660,100 C880,100,1100,292,1320,292 L1320 500 L0  500");
+    }
+
+    100%{
+        d:path("M0,192 C220,100,440,100,660,192 C880,290,1100,290,1320,192 L1320 500 L0  500");
+    }
+
+}
+
+.dss{
+    width: 100vw;
+    height: 0%;
+    position: relative;
+    margin:0;
+    padding:0;
+}
+
+.copy{
+    position:absolute;
+    color: white;
+    font-weight: 600;
+    bottom: 4.5rem;
+    left:5rem;
+    right: 5rem;
+    font-size: 1.2rem;
+}
+
+.sos{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.sos .so{
+    margin-left: 3rem;
+    line-height: 25px;
+    width: 13rem;
+    height: 25px;
+    overflow: hidden;
+}
+
+.so li{
+    font-weight: bold;
+    list-style: none;
+     content: '';
+     position: relative;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     font-size: 30px;
+     color: rgb(129, 129, 129);
+     animation: o 6s steps(3) infinite ;
+}
+@keyframes o {
+    100%{
+        top:-75px ;
+        margin: 0 -30 0 30;
+    }
+}
+
+.so li span::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(194, 194, 194);
+    border-left: 2px solid rgb(194, 194, 194);
+    animation: soo 2s infinite;
+}
+
+@keyframes soo {
+    100%{
+          left: 100%;
+    }
+}
+
+@media screen and (max-width:1156px) {
+    .copy{
+        font-size: 96;
+        bottom: 4rem;
+    }
+
+}
+
+@media screen and (max-width:887px) {
+    .copy{
+        font-size: 92%;
+        bottom: 3.5rem;
+    }
+
+}
+
+@media screen and (max-width:804px) {
+    .copy{
+        font-size: 88%;
+        bottom: 3rem;
+    }
+
+}
+
+@media screen and (max-width:765px) {
+    .copy{
+        font-size: 84%;
+        bottom: 2.5rem;
+    }
+}
+
+@media screen and (max-width:714px) {
+    .copy{
+        font-size: 80%;
+        bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:694px) {
+    .copy{
+        font-size: 76%;
+        bottom: 1.5rem;
+        left: 4rem;
+        right: 4rem;
+    }
+}
+
+@media screen and (max-width:598px) {
+    .copy{
+        font-size: 76%;
+        bottom: 1.5rem;
+        left: 3rem;
+        right: 3rem;
+    }
+}
+
+@media screen and (max-width:565px) {
+    .copy{
+        font-size: 72%;
+        bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:542px) {
+    .copy{
+        left: 2rem;
+        right: 2rem;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .copy{
+        left: 1rem;
+        right: 1rem;
+    }
+}
+
+@media screen and (max-width:442px) {
+    .copy{
+        font-size: 68%;
+        bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:379px) {
+    .copy{
+        font-size: 68%;
+        bottom: 1rem;
+        left: 3rem;
+        right: 3rem;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .copy{
+        font-size: 64%;
+        bottom: 1rem;
+        left: 2rem;
+        right: 2rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .copy{
+        font-size: 55%;
+        bottom: 1rem;
+        left: 1rem;
+        right:1rem;
+    }
+}
+
+@media screen and (max-width:244px) {
+    .copy{
+        font-size: 50%;
+        bottom: .6rem;
+        left: 1rem;
+        right:1rem;
+    }
+}
+
+@media screen and (max-width:192px) {
+    .copy{
+        font-size: 45%;
+        bottom: .6rem;
+        left: .5rem;
+        right:.5rem;
+    }
+}
+
+@media screen and (max-width:282px) {
+     .lol{
+         font-size: 22px;
+     }
+
+     .so li{
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width:213px) {
+    .lol{
+        font-size: 17px;
+    }
+
+    .so li{
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width:171px) {
+    .lol{
+        font-size: 10px;
+    }
+
+    .so li{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width:230px) {
+    .button1{
+        font-size: .7rem;
+    padding: .1rem;
+    padding-right:.2rem;
+    padding-left:.2rem;
+    margin: .3rem;
+    }
+
+    .button2{
+        font-size: .7rem;
+    padding: .1rem;
+    padding-right:.2rem;
+    padding-left:.2rem;
+    margin: .3rem;
+    }
+
+    .button3{
+        font-size: .7rem;
+    padding: .1rem;
+    padding-right:.2rem;
+    padding-left:.2rem;
+    margin: .3rem;
+    }
+}
+
+@media screen and (max-width:343px) {
+      .img{
+        width:  6rem;
+        height: 6rem; 
+      }
+}
+
+@media screen and (max-width:226px) {
+    .img{
+      width:  5rem;
+      height: 5rem; 
+    }
+}
+
+.mainf{
+    width: 100vw;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
+.center{
+   background-image:linear-gradient(to right top, #42b0ff, #6154fe ) ;
+   width: 350px;
+   position: relative;
+   height:220px;
+   padding: 30px;
+   border-radius: 16px;
+   box-shadow: 
+   0 2.8px  2.2px  rgba(0,0,0,0.034),
+   0 6.7px  5.3px  rgba(0,0,0,0.048),
+   0 12.5px  10px  rgba(0,0,0,0.06),
+   0 22.3px  17.9px rgba(0,0,0,0.072),
+   0 41.8px  33.4px rgba(0,0,0,0.086),
+   0 100px  80px   rgba(0,0,0,0.12);
+   z-index: 2;
+}
+
+.top{
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 2;
+}
+
+.top h1{
+    color: rgb(199, 199, 199);
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    z-index: 2;
+}
+
+.top h2{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.center .bottom{
+    position: absolute;
+    bottom: 20px;
+    z-index: 2;
+}
+
+.bottom h1{
+    color: rgb(194, 194, 194);
+    margin-left: -158px;
+    font-size: 17px;
+    margin-bottom: 5px;
+    z-index: 2;
+}
+
+.bottom h2{
+    color: rgb(207, 207, 207);
+    font-size: 18px;
+    z-index: 2;
+}
+
+.center::before{
+   position: absolute;
+   border-radius: 16px;
+   content: '';
+   left: 0;
+   top: 0;
+   opacity: .9;
+   clip-path: polygon(21% 0, 100% 0, 100% 36%, 100% 100%, 83% 100%, 66% 71%, 44% 59%, 38% 28%);
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   background: rgb(0,17,83);
+   background: linear-gradient(90deg, rgba(0,17,83,1) 20%, rgba(4,0,161,1) 45%, rgba(28,0,218,1) 54%, rgba(0,130,201,1) 85%, rgba(16,198,236,1) 97%);
+}
+
+.center::after{
+    position: absolute;
+    border-radius: 16px;
+    content: '';
+    left: 0;
+    top: 0;
+    opacity: .9;
+    clip-path: polygon(21% 0, 100% 0, 100% 36%, 100% 100%, 83% 100%, 66% 71%, 44% 59%, 38% 28%);
+    width: 100%;
+    height: 100%;
+    background-image: url('star-images-transparent-free-stars-falling-png-banner-download-glowing-stars-png-2287_1544.png');
+    background-size: cover;
+    z-index: 1;
+ }
+
+.button4{
+    text-decoration:none ;
+    padding: .2rem;
+    padding-right:.5rem;
+    padding-left:.5rem;
+    margin: .5rem;
+    color: white;
+    background-color:rgb(31, 3, 187);
+    border-radius: 3rem;
+    font-family:"Audiowide", sans-serif ;
+    font-size: .8rem;
+    transition-property: all;
+    transition-duration: .10s;
+}
+
+.button4:hover{
+    padding: .4rem;
+    padding-right:.6rem;
+    padding-left:.6rem;
+    margin: .4rem;
+}
+
+@media screen and (max-width:295px){
+    .button1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .2rem;
+        padding-right:.6rem;
+        padding-left:.6rem;
+        margin: .5rem;
+    }
+
+    .button2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .2rem;
+        padding-right:.6rem;
+        padding-left:.6rem;
+        margin: .5rem;
+    }
+
+    .button3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .2rem;
+        padding-right:.6rem;
+        padding-left:.6rem;
+        margin: .5rem;
+    }
+
+    .button4{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        padding: .2rem;
+        padding-right:.6rem;
+        padding-left:.6rem;
+        margin: .5rem;
+    }
+}
